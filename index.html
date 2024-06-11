@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Voting System</title>
+</head>
+<body>
+    <h1>Voting System</h1>
+    <button id="connectWallet">Connect Wallet</button>
+    <div id="walletInfo"></div>
+
+    <div id="adminSection" style="display: none;">
+        <!-- Admin Functions -->
+        <button onclick="startVote()">Start Vote</button>
+        <button onclick="closeVote()">Close Vote</button>
+        <input type="text" id="candidateName" placeholder="Candidate Name">
+        <input type="number" id="candidateAge" placeholder="Candidate Age">
+        <input type="number" id="candidateId" placeholder="Candidate ID">
+        <button onclick="addCandidate()">Add Candidate</button>
+        <input type="text" id="allowlistAddress" placeholder="Allowlist Address">
+        <button onclick="addToAllowlist()">Add to Allowlist</button>
+
+        <!-- Read-Only Functions -->
+        <h2>Read-Only Functions</h2>
+        <button onclick="getAdminInfo()">Get Admin Info</button>
+        <button onclick="getCandidates()">Get Candidates</button>
+        <button onclick="getCurrentVoteStatus()">Get Current Vote Status</button>
+        <button onclick="getWinner()">Get Winner</button>
+    </div>
+
+    <div id="voterSection" style="display: none;">
+        <!-- Voter Functions -->
+        <select id="candidateSelect"></select>
+        <button onclick="vote()">Vote</button>
+		<div id="transactionStatus"></div>
+ 		<div id="transactionHash"></div>
+
+        <!-- Read-Only Functions -->
+        <h2>Read-Only Functions</h2>
+		<button onclick="getAdminInfo()">Get Admin Info</button>
+        <button onclick="getAllowlist()">Get Allowlist</button>
+        <button onclick="getCandidates()">Get Candidates</button>
+        <button onclick="getCurrentVoteStatus()">Get Current Vote Status</button>
+        <button onclick="getWinner()">Get Winner</button>
+        <button onclick="getHasVoted()">Get Has Voted</button>
+    </div>
+
+    <div id="resultsSection" style="display: none;">
+        <h2>Vote Results</h2>
+        <div id="winner"></div>
+        <div id="voteStatus"></div>
+		
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.3.6/dist/web3.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
