@@ -1,0 +1,93 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('https://i.ibb.co/BcCLq0z/blockchain-voting.png');
+    background-size: cover; /* Use cover for background image */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Header Styles */
+header {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    z-index: 1000; /* Ensure header is on top */
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Main Styles */
+main {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 100px auto 20px; /* Adjust margin for spacing */
+}
+
+/* Section Styles */
+section {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%; /* Full width for responsive layout */
+    max-width: 400px; /* Max width for section */
+    margin: 0 auto 20px; /* Add bottom margin for spacing */
+}
+
+/* Centering the Connect Wallet Button */
+.center-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Button Styles */
+button {
+    margin: 10px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Input Styles */
+input[type="text"],
+input[type="number"],
+select {
+    margin: 5px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: calc(100% - 10px); /* Adjust width for input */
+    box-sizing: border-box;
+}
+
+/* Footer Styles */
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    z-index: 1000; /* Ensure footer is on top */
+}
